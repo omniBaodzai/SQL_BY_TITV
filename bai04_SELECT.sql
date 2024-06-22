@@ -16,14 +16,12 @@ của khách hàng đó. */
 SELECT CompanyName, Country
 FROM Customers;
 GO
-
 -- B. Bài tập. --
 /* Bài tập 01: Viết câu lệnh SQL lấy ra tên công ty và số điện thoại của tất cả 
 các nhà cung cấp hàng */
 SELECT CompanyName, Phone
 FROM Suppliers;
 GO
-
 -- C. Thử thách. --
 /* Thử thách 1: Viết câu lệnh SQL lấy ra mã người giao hàng và tên công ty của
 tất cả người giao hàng */
