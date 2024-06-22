@@ -4,27 +4,27 @@
 /* Ví dụ 01: Viết câu lệnh SQL lấy ra cột "CompanyName" và đặt tên thay thế là "Công ty" với cột "PostalCode" và
 đặt tên thay thế là "Mã bưu điện" từ bảng "Customers". */
 SELECT CompanyName AS "Công ty", -- Chuỗi kí tự: Có thể dùng ngoặc kép hoặc ngoặc đơn.
-	   PostalCode AS [Mã bưu điện] -- Chuỗi kí tự: Có thể sử dụng ngoặc vuông thay thế cho ngoặc kép và đơn.
+       PostalCode AS [Mã bưu điện] -- Chuỗi kí tự: Có thể sử dụng ngoặc vuông thay thế cho ngoặc kép và đơn.
 FROM Customers;
 GO
 -- Hoặc: Hạn chế sử dụng cách này vì gây khó hiểu cho người đọc.
 SELECT CompanyName "Công ty",
-	   PostalCode "Mã bưu điện"
+       PostalCode "Mã bưu điện"
 FROM Customers;
 GO
 /* Ví dụ 02: Viết câu lệnh SQL lấy ra cột "LastName" và đặt tên thay thế là "Họ và chữ lót" với cột "FirstName" 
 và đặt tên thay thế là "Họ" từ bảng "Employees". */
 SELECT LastName AS "Họ và chữ lót",
-	   FirstName AS 'Tên' 
+       FirstName AS 'Tên' 
 FROM Employees;
 GO
 -- Hoặc: Hạn chế sử dụng cách này vì gây khó hiểu cho người đọc.
 SELECT LastName AS "Họ và chữ lót", 
-	   FirstName AS Tên -- Từ đơn: Có thể không dùng ngoặc kép hoặc đơn cũng được (không khuyến khích).
+       FirstName AS Tên -- Từ đơn: Có thể không dùng ngoặc kép hoặc đơn cũng được (không khuyến khích).
 FROM Employees;
 GO
 /* Ví dụ 03: Viết câu lệnh SQL lấy ra 15 dòng đầu tiên cho tất cả các cột từ bảng "Orders" và đặt tên thay thế cho 
-bảng Orders là "o". */
+bảng "Orders" là "o". */
 SELECT TOP 15 *
 FROM Orders AS [o];
 GO
@@ -41,8 +41,8 @@ GO
 Và đặt tên thay thế cho bảng "Prodcuts" là "p", sử dụng tên thay thế khi truy vấn các cột bên trên. Và chỉ lấy 
 ra 5 dòng đầu tiên từ bảng "Products". */
 SELECT TOP 5 [p].ProductName AS [Tên sản phẩm], 
-			 [p].SupplierID AS [Mã nhà cung cấp], 
-			 [p].CategoryID AS [Mã thể loại]
+	     [p].SupplierID AS [Mã nhà cung cấp], 
+	     [p].CategoryID AS [Mã thể loại]
 FROM Products AS [p];
 GO
 
@@ -54,7 +54,7 @@ FROM Customers;
 GO
 /* Thử thách 2: Viết câu lệnh SQL lấy ra các mã thể loại (CategoryID) khác nhau với 6 dòng đầu tiên và đổi
 tên Bảng "Products" thành [p] rồi sử dụng tên thay thể đó để truy vấn cột cần lấy. */
-SELECT DISTINCT TOP 6 [p].[CategoryID] AS [Quốc gia]
+SELECT DISTINCT TOP 6 [p].[CategoryID] AS [Mã thể loại]
 FROM Products AS [p];
 GO
 
