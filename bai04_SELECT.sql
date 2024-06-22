@@ -33,7 +33,7 @@ GO
 
 -- Phần II: Câu lệnh SELECT *.  --
 -- A. Ví dụ. --
--- Ví dụ 01: Viết câu lệnh SQL lấy ra tất cả dữ liệu từ bảng Products
+-- Ví dụ 01: Viết câu lệnh SQL lấy ra tất cả dữ liệu từ bảng Products.
 SELECT *
 FROM [dbo].[Products];
 GO
