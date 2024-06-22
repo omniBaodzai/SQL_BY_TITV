@@ -1,7 +1,7 @@
 -- Bài 04: Câu lệnh truy vấn SELECT. --
 
 -- Phần I: Câu lệnh SELECT  --
- -- A. Ví dụ. --
+-- A. Ví dụ. --
 -- Ví dụ 01: Viết câu lệnh SQL lấy ra tên của tất cả các sản phẩm.
 SELECT ProductName
 FROM Products;
