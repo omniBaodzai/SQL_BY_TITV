@@ -23,7 +23,7 @@ các nhà cung cấp từ [bảng Suppliers]. */
 SELECT CompanyName, Phone
 FROM Suppliers;
 GO
-
+  
 -- C. Thử thách. --
 /* Thử thách 1: Viết câu lệnh SQL lấy ra mã người giao hàng (ShipperID) và tên công ty (CompanyName) của
 tất cả người giao hàng từ [bảng Shippers]. */
@@ -46,11 +46,13 @@ GO
 SELECT *
 FROM [dbo].[Customers];
 GO
+  
 -- B. Bài tập.--
 -- Bài tập 01: Viết câu lệnh SQL lấy ra tất cả dữ liệu từ [bảng Suppliers].
 SELECT *
 FROM Suppliers;
 GO
+  
 -- C. Thử thách. --
 -- Thử thách 01: Viết câu lệnh SQL lấy ra tất cả dữ liệu từ [bảng Orders].
 SELECT *
