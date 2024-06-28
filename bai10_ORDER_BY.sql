@@ -1,8 +1,7 @@
 -- Bài 10: ORDER BY - Sắp xếp kết quả trả về. --
 
 -- A. Ví dụ. --
-/* Ví dụ 01: Viết câu lệnh SQL liệt kê tất cả các nhà cung cấp theo thứ tự
-tên công ty (CompanyName) từ A - Z từ bảng "Suppliers". */
+-- Ví dụ 01: Viết câu lệnh SQL liệt kê tất cả các nhà cung cấp theo thứ tựtên công ty (CompanyName) từ A - Z từ bảng "Suppliers". 
 SELECT *
 FROM Suppliers
 ORDER BY CompanyName ASC;
@@ -12,8 +11,7 @@ SELECT *
 FROM Suppliers
 ORDER BY CompanyName;
 GO
-/* Ví dụ 02: Viết câu lệnh SQL liệt kê tất cả các sản phẩm theo thứ tự đơn giá (UnitPrice)
-giảm dần từ bảng "Products". */
+-- Ví dụ 02: Viết câu lệnh SQL liệt kê tất cả các sản phẩm theo thứ tự đơn giá (UnitPrice) giảm dần từ bảng "Products". 
 SELECT *
 FROM Products
 ORDER BY UnitPrice DESC;
@@ -32,8 +30,7 @@ ORDER BY Quantity DESC;
 GO
 
 -- B. Bài tập. --
-/* Bài tập 01: Viết câu lệnh SQL liệt kê danh sách các đơn đặt hàng (OrderID) theo thứ tự giảm dần
-của ngày đặt hàng (OrderDate) từ bảng "Orders". */
+-- Bài tập 01: Viết câu lệnh SQL liệt kê danh sách các đơn đặt hàng (OrderID) theo thứ tự giảm dầncủa ngày đặt hàng (OrderDate) từ bảng "Orders".
 SELECT OrderID
 FROM Orders
 ORDER BY OrderDate DESC;
