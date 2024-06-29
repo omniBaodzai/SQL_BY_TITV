@@ -56,7 +56,7 @@ ORDER BY Freight DESC;
 GO
 /* Thử thách 03: Viết câu lệnh SQL lấy ra 3 nhân có viên có tên (FirstName), ngày sinh (BirthDate) và ngày tuyển dụng (HireDate) khác nhau
 dựa theo tên (FirstName) từ A - Z từ [bảng Employees]. */
-SELECT TOP 3 FirstName, BirthDate, HireDate
+SELECT DISTINCT TOP 3 FirstName, BirthDate, HireDate
 FROM Employees
 ORDER BY FirstName ASC;
 GO
