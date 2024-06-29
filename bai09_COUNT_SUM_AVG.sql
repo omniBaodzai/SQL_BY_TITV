@@ -51,7 +51,7 @@ GO
 SELECT COUNT(ShipperID) AS [NumbersOfShippers]
 FROM Shippers;
 GO
--- Thử thách 02: Viết câu lệnh SQL tính tổng số đơn đang đặt hàng (UnitsOnOrder) của các sản phẩm từ [bảng Products]. 
+-- Thử thách 02: Viết câu lệnh SQL tính tổng số đơn đã được đặt hàng (UnitsOnOrder) của các sản phẩm từ [bảng Products]. 
 SELECT SUM(UnitsOnOrder) AS [TotalUnitsOnOrder]
 FROM Products;
 GO
