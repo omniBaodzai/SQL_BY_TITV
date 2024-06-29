@@ -22,7 +22,7 @@ SELECT DISTINCT ShipVia
 FROM Orders;
 GO
 
--- C. Thử thác. --
+-- C. Thử thách. --
 /* Thử thách 1: Viết câu lệnh SQL lấy ra các mã danh mục/thể loại (CategoryID) khác nhau của các sản phẩm 
 từ [bảng Products]. */
 SELECT DISTINCT CategoryID
