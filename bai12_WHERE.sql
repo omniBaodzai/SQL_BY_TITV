@@ -57,10 +57,10 @@ GO
 /* Thử thách 03: Viết câu lệnh SQL lấy ra các sản phẩm có số lượng hàng tồn kho (RemainingStock)
 lớn hơn hoặc bằng 0 từ [bảng Products]. Lưu ý là số lượng hàng TỒN KHO chứ không phải TRONG KHO. */
 SELECT  [ProductID],
-		[ProductName],
-		[UnitsInStock],
-		[UnitsOnOrder],
-		([UnitsOnOrder] - [UnitsInStock]) AS [RemainingStock]
+        [ProductName],
+        [UnitsInStock],
+        [UnitsOnOrder],
+        ([UnitsOnOrder] - [UnitsInStock]) AS [RemainingStock]
 FROM Products
 WHERE ([UnitsOnOrder] - [UnitsInStock]) >= 0;
 GO
