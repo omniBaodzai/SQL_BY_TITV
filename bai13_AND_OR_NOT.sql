@@ -7,15 +7,14 @@ SELECT *
 FROM [Products]
 WHERE [UnitsInStock] < 50 OR [UnitsInStock] > 100;
 GO
-/* Ví dụ 02: Viết câu lệnh SQL liệt kê tất cả các đơn đặt hàng được giao đến "Brazil"
-đã bị giao muộn từ [bảng Orders], biết ngày yêu cầu giao hàng là RequiredDate và ngày giao hàng
-thực tế là ShippedDate. */
+/* Ví dụ 02: Viết câu lệnh SQL liệt kê tất cả các đơn đặt hàng được giao đến "Brazil" đã bị giao muộn từ [bảng Orders],
+biết ngày yêu cầu giao hàng là RequiredDate và ngày giao hàng thực tế là ShippedDate. */
 SELECT *
 FROM [Orders]
 WHERE [ShipCountry] = 'Brazil' AND [ShippedDate] > [RequiredDate];
 GO
-/* Ví dụ 03: Viết câu lệnh SQL lấy ra tất cả các sản phẩm có giá (UnitPrice) nhỏ hơn 100$ và
-có mã thể loại (CategoryID) khác 1 từ [bảng Products]. Sử dụng toán tử NOT*/
+/* Ví dụ 03: Viết câu lệnh SQL lấy ra tất cả các sản phẩm có giá (UnitPrice) nhỏ hơn 100$ và có mã thể loại (CategoryID) khác 1 từ [bảng Products].
+Sử dụng toán tử NOT. */
 -- Cách 1:
 SELECT *
 FROM [Products]
@@ -38,7 +37,7 @@ nằm trong trong khoảng [50, 100] từ [bảng Orders]. */
 -- Cách 1:
 SELECT *
 FROM [Orders]
-WHERE NOT([Freight] < 50 OR [Freight] > 100);
+WHERE NOT ([Freight] < 50 OR [Freight] > 100);
 GO
 -- Cách 2:
 SELECT *
@@ -48,7 +47,7 @@ GO
 -- Cách 3:
 SELECT *
 FROM [Orders]
-WHERE  (NOT[Freight] < 50) AND (NOT [Freight] > 100);
+WHERE  (NOT [Freight] < 50) AND (NOT [Freight] > 100);
 GO
 /* Bài tập 02: Viết câu lệnh SQL liệt kê các sản phẩm có số lượng hàng trong kho (UnitsInStock)
 lớn hơn 20 và số lượng hàng trong đơn hàng (UnitsOnOrder) nhỏ hơn 20 từ [bảng Products]. */
@@ -79,7 +78,7 @@ GO
 từ [bảng Products]. Sử dụng toán tử NOT. */
 SELECT [ProductID],
        [ProductName],
-	   [UnitsInStock],
+       [UnitsInStock],
        [UnitsOnOrder],
        [UnitsOnOrder] - [UnitsInStock] AS [RemainingStock]
 FROM [Products]
